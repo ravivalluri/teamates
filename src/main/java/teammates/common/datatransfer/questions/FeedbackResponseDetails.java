@@ -44,9 +44,7 @@ public abstract class FeedbackResponseDetails {
      * <p>default action is to call getAnswerHtml(FeedbackQuestionDetails questionDetails).
      * override in child class if necessary.
      * 
-     * @param questionDetails
      * @param feedbackSessionResultsBundle
-     * @return
      */
     public String getAnswerHtml(FeedbackResponseAttributes response, FeedbackQuestionAttributes question,
                                 FeedbackSessionResultsBundle feedbackSessionResultsBundle) {
@@ -59,9 +57,7 @@ public abstract class FeedbackResponseDetails {
      * <p>default action is to call getAnswerCsv(FeedbackQuestionDetails questionDetails).
      * override in child class if necessary.
      * 
-     * @param questionDetails
      * @param feedbackSessionResultsBundle
-     * @return
      */
     public String getAnswerCsv(FeedbackResponseAttributes response, FeedbackQuestionAttributes question,
                                     FeedbackSessionResultsBundle feedbackSessionResultsBundle) {

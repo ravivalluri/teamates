@@ -34,7 +34,6 @@ public class CourseDetailsBundle {
     
     /**
      * Gets all FeedbackSessionAttributes in this CourseDetailsBundle.
-     * @return
      */
     public List<FeedbackSessionAttributes> getFeedbackSessionsList() {
         List<FeedbackSessionAttributes> feedbackSessionAttributes = new ArrayList<FeedbackSessionAttributes>();

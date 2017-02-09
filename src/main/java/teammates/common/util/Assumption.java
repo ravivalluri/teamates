@@ -1,5 +1,7 @@
 package teammates.common.util;
 
+import org.junit.Assert;
+
 import teammates.common.exception.NullPostParameterException;
 
 /**
@@ -11,7 +13,7 @@ import teammates.common.exception.NullPostParameterException;
  * support the assertions.is This file is a copy of org.junit.Assert v4.10.
  * Cannot use default java assert due to GAE environment restriction
  * 
- * @see org.junit.Assert
+ * @see Assert
  */
 public final class Assumption {
 

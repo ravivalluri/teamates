@@ -804,7 +804,6 @@ public class InstructorFeedbackResultsPageData extends PageData {
      * The statistics tables are added to the sectionPanel.
      * 
      * @param sectionPanel
-     * @param questions
      * @param responsesGroupedByTeam
      * @param teamsInSection
      */
@@ -1057,8 +1056,6 @@ public class InstructorFeedbackResultsPageData extends PageData {
      * the missing responses between pairs of givers and recipients.
      * @param question
      * @param responses  existing responses for the question
-     * 
-     * @see configureResponseRowForViewType
      */
     private List<InstructorFeedbackResultsResponseRow> buildResponseRowsForQuestion(
             FeedbackQuestionAttributes question, List<FeedbackResponseAttributes> responses) {
@@ -1230,10 +1227,7 @@ public class InstructorFeedbackResultsPageData extends PageData {
     
     /**
      * Construct missing response rows between the giver identified by {@code giverIdentifier} and
-     * {@code possibleReceivers}. The response rows are configured using
-     * {@code configureResponseRowForViewType(viewType)}.
-     * 
-     * @see configureResponseRowForViewType
+     * {@code possibleReceivers}.
      */
     private List<InstructorFeedbackResultsResponseRow> buildMissingResponseRowsBetweenGiverAndPossibleRecipients(
                                                                     FeedbackQuestionAttributes question,
@@ -1269,10 +1263,7 @@ public class InstructorFeedbackResultsPageData extends PageData {
     
     /**
      * Construct missing response rows between the recipient identified by {@code recipientIdentifier} and
-     * {@code possibleGivers}. The response rows are configured using
-     * {@code configureResponseRowForViewType(viewType)}.
-     * 
-     * @see configureResponseRowForViewType
+     * {@code possibleGivers}.
      */
     private List<InstructorFeedbackResultsResponseRow> buildMissingResponseRowsBetweenRecipientAndPossibleGivers(
                                     FeedbackQuestionAttributes question,
