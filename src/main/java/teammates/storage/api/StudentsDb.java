@@ -174,10 +174,6 @@ public class StudentsDb extends EntitiesDb {
     }
     
     /**
-     * Works only for encrypted keys.
-     * 
-     * Preconditions: <br>
-     * * All parameters are non-null.
      * @return null if no matching student.
      */
     public StudentAttributes getStudentForRegistrationKey(String registrationKey) {
@@ -584,11 +580,7 @@ public class StudentsDb extends EntitiesDb {
         
     }
     
-    /**
-     * 
-     * Functions for the new CourseStudent class to replace Student class
-     * 
-     */
+    // Functions for the new CourseStudent class to replace Student class
     
     private CourseStudent getCourseStudentEntityForEmail(String courseId, String email) {
         
