@@ -56,7 +56,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         testDeleteCourse();
     }
 
-    public void testGetCourse() throws Exception {
+    private void testGetCourse() throws Exception {
 
         ______TS("failure: course doesn't exist");
 
@@ -81,7 +81,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCoursesForInstructor() throws Exception {
+    private void testGetCoursesForInstructor() throws Exception {
 
         ______TS("success: instructor with present courses");
         
@@ -123,7 +123,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testIsSampleCourse() {
+    private void testIsSampleCourse() {
         
         ______TS("typical case: not a sample course");
         
@@ -152,7 +152,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testIsCoursePresent() {
+    private void testIsCoursePresent() {
 
         ______TS("typical case: not an existent course");
         
@@ -176,7 +176,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testVerifyCourseIsPresent() throws Exception {
+    private void testVerifyCourseIsPresent() throws Exception {
 
         ______TS("typical case: verify a non-existent course");
        
@@ -204,7 +204,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCourseSummary() throws Exception {
+    private void testGetCourseSummary() throws Exception {
 
         ______TS("typical case");
 
@@ -268,7 +268,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCourseSummaryWithoutStats() throws Exception {
+    private void testGetCourseSummaryWithoutStats() throws Exception {
 
         ______TS("typical case");
 
@@ -323,7 +323,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCourseDetails() throws Exception {
+    private void testGetCourseDetails() throws Exception {
 
         ______TS("typical case");
 
@@ -383,7 +383,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetTeamsForCourse() throws Exception {
+    private void testGetTeamsForCourse() throws Exception {
        
         ______TS("typical case");
 
@@ -428,7 +428,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCoursesForStudentAccount() throws Exception {
+    private void testGetCoursesForStudentAccount() throws Exception {
 
         ______TS("student having two courses");
 
@@ -479,7 +479,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCourseDetailsListForStudent() throws Exception {
+    private void testGetCourseDetailsListForStudent() throws Exception {
 
         ______TS("student having multiple evaluations in multiple courses");
     
@@ -522,7 +522,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCourseSummariesForInstructor() throws Exception {
+    private void testGetCourseSummariesForInstructor() throws Exception {
 
         ______TS("Instructor with 2 courses");
     
@@ -568,7 +568,7 @@ public class CoursesLogicTest extends BaseLogicTest {
        
     }
 
-    public void testGetCoursesSummaryWithoutStatsForInstructor() throws Exception {
+    private void testGetCoursesSummaryWithoutStatsForInstructor() throws Exception {
         
         ______TS("Typical case");
 
@@ -602,7 +602,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testGetCourseStudentListAsCsv() throws Exception {
+    private void testGetCourseStudentListAsCsv() throws Exception {
 
         ______TS("Typical case: course with section");
         
@@ -706,7 +706,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testHasIndicatedSections() throws Exception {
+    private void testHasIndicatedSections() throws Exception {
 
         ______TS("Typical case: course with sections");
 
@@ -739,7 +739,7 @@ public class CoursesLogicTest extends BaseLogicTest {
 
     }
 
-    public void testCreateCourse() throws Exception {
+    private void testCreateCourse() throws Exception {
         
         /*Explanation:
          * The SUT (i.e. CoursesLogic::createCourse) has only 1 path. Therefore, we
@@ -761,7 +761,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
     
-    public void testCreateCourseAndInstructor() throws Exception {
+    private void testCreateCourseAndInstructor() throws Exception {
         
         /* Explanation: SUT has 5 paths. They are,
          * path 1 - exit because the account doesn't' exist.
@@ -892,7 +892,7 @@ public class CoursesLogicTest extends BaseLogicTest {
         }
     }
 
-    public void testDeleteCourse() {
+    private void testDeleteCourse() {
     
         ______TS("typical case");
     
