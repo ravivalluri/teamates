@@ -283,7 +283,7 @@ public class InstructorCourseEnrollSaveActionTest extends BaseActionTest {
     }
     
     /**
-     * Verify if <code>student exists in the <code>studentsAfterEnrollment
+     * Verify if {@code student} exists in the {@code panelList}.
      */
     private void verifyStudentEnrollmentStatus(StudentAttributes student, List<EnrollResultPanel> panelList) {
         boolean result = false;
