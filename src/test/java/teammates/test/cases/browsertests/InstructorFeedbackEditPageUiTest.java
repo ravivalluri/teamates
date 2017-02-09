@@ -38,7 +38,7 @@ public class InstructorFeedbackEditPageUiTest extends BaseUiTestCase {
     private static String instructorId;
     private static String courseId;
     private static String feedbackSessionName;
-    /** This contains data for the feedback session to be edited during testing */
+    /** This contains data for the feedback session to be edited during testing. */
     private static FeedbackSessionAttributes editedSession;
 
     @Override

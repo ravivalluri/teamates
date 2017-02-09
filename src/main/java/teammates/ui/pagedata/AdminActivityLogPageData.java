@@ -20,7 +20,7 @@ import teammates.common.util.TimeHelper;
 public class AdminActivityLogPageData extends PageData {
     
     /**
-     * this array stores the requests to be excluded from being shown in admin activity logs page
+     * Stores the requests to be excluded from being shown in admin activity logs page.
      */
     private static String[] excludedLogRequestURIs = {
             Const.ActionURIs.INSTRUCTOR_FEEDBACK_STATS_PAGE,
@@ -122,8 +122,8 @@ public class AdminActivityLogPageData extends PageData {
     }
     
     /**
-     * Checks in an array contains a specific value
-     * value is converted to lower case before comparing
+     * Checks that an array contains a specific value.
+     * (value is converted to lower case before comparing)
      */
     private boolean arrayContains(String[] array, String value) {
         for (String element : array) {
@@ -148,8 +148,8 @@ public class AdminActivityLogPageData extends PageData {
     }
     
     /**
-     * check current log entry should be excluded as rubbish logs
-     * returns false if the logEntry is regarded as rubbish
+     * Checks that the current log entry should be excluded as rubbish logs.
+     * @return false if the logEntry is regarded as rubbish
      */
     private boolean shouldExcludeLogEntry(ActivityLogEntry logEntry) {
         
@@ -243,8 +243,7 @@ public class AdminActivityLogPageData extends PageData {
     }
     
     /**
-     * Converts the query string into a QueryParameters object
-     * 
+     * Converts the query string into a QueryParameters object.
      */
     private QueryParameters parseQuery(String query) throws ParseException, InvalidParametersException {
         QueryParameters q = new QueryParameters();
@@ -435,7 +434,7 @@ public class AdminActivityLogPageData extends PageData {
         }
         
         /**
-         * add a label and values in
+         * Add a label and values in.
          */
         public void add(String label, String[] values) throws InvalidParametersException {
             switch (label) {

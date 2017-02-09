@@ -219,7 +219,7 @@ public class AdminEmailLogPageData extends PageData {
         }
         
         /**
-         * add a label and values in
+         * Add a label and values in.
          */
         public void add(String label, String[] values) throws ParseException, InvalidParametersException {
             if ("after".equals(label)) {

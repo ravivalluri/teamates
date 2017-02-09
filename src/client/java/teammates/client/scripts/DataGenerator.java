@@ -63,7 +63,7 @@ public final class DataGenerator {
     }
     
     /**
-     * Write data to file, create new file if necessary
+     * Writes data to file, creates new file if necessary.
      * 
      * @param data - Data string to write
      * @param filePath - path to file
@@ -89,8 +89,7 @@ public final class DataGenerator {
     }
 
     /**
-     * Create data
-     * 
+     * Creates data.
      */
     private static String generateData() {
         System.out.println("Start generating data!");
@@ -112,7 +111,7 @@ public final class DataGenerator {
     }
     
     /**
-     * Randomly create courses, students and evaluations for a particular instructor
+     * Randomly creates courses, students and evaluations for a particular instructor.
      * @param instructorName
      */
     private static void generateDataForCourse(String courseName) {
@@ -134,7 +133,7 @@ public final class DataGenerator {
     }
     
     /**
-     * Randomly create students for a particular course
+     * Randomly creates students for a particular course.
      * @param courseName
      */
     private static void generateStudentsDataForCourse(String courseName) {

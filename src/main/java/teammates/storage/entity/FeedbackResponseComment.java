@@ -47,7 +47,7 @@ public class FeedbackResponseComment {
     @Persistent
     private String feedbackResponseId;
 
-    /** Is this comment pending to be sent to recipient (through email) or sending or sent */
+    /** Is this comment pending to be sent to recipient (through email) or sending or sent. */
     @Persistent
     private CommentSendingState sendingState;
 
@@ -59,7 +59,6 @@ public class FeedbackResponseComment {
     @Persistent
     private String receiverSection;
     
-    /** visibility settings **/
     @Persistent
     private List<FeedbackParticipantType> showCommentTo;
     
@@ -73,16 +72,16 @@ public class FeedbackResponseComment {
     @Persistent
     private Date createdAt;
     
-    /** The comment from giver about the feedback response */
+    /** The comment from giver about the feedback response. */
     @Persistent
     @Extension(vendorName = "datanucleus", key = "gae.unindexed", value = "true")
     private Text commentText;
     
-    /** The e-mail of the account that last edited the comment */
+    /** The e-mail of the account that last edited the comment. */
     @Persistent
     private String lastEditorEmail;
     
-    /** The time in which the comment is last edited */
+    /** The time in which the comment is last edited. */
     @Persistent
     private Date lastEditedAt;
     

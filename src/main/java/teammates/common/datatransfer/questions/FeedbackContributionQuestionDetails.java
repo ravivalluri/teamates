@@ -853,7 +853,7 @@ public class FeedbackContributionQuestionDetails extends FeedbackQuestionDetails
     }
     
     /**
-     * Return the CSS color of different point
+     * Returns the CSS color of different point.
      */
     private String getContributionOptionsColor(int points) {
         if (points == Const.POINTS_NOT_SURE

@@ -736,7 +736,7 @@ public class InstructorFeedbackResultsPageData extends PageData {
     }
 
     /**
-     * Builds participant panels for the specified team, and add to sectionPanel
+     * Builds participant panels for the specified team, and add to sectionPanel.
      * @param sectionPanel
      * @param teamName
      * @param teamMembers
@@ -875,7 +875,7 @@ public class InstructorFeedbackResultsPageData extends PageData {
     }
     
     /**
-     * Builds question tables without response rows, but with stats
+     * Builds question tables without response rows, but with stats.
      * @param question
      * @param responses  responses to compute statistics for
      * @param additionalInfoId
@@ -1368,14 +1368,18 @@ public class InstructorFeedbackResultsPageData extends PageData {
     }
     
     /**
-     * Returns <br>
-     *  * null if the participant is not visible,<br>
-     *  * a disabled moderation button if the instructor does not have sufficient permissions, or<br>
-     *  * a working moderation button otherwise
+     * Gets moderation button for giver.
+     * 
      * @param question
      * @param giverIdentifier
      * @param className
      * @param buttonText
+     * @return
+     * <ul>
+     * <li>null if the participant is not visible</li>
+     * <li>a disabled moderation button if the instructor does not have sufficient permissions</li>
+     * <li>a working moderation button otherwise</li>
+     * </ul>
      */
     private InstructorFeedbackResultsModerationButton buildModerationButtonForGiver(FeedbackQuestionAttributes question,
                                                                             String giverIdentifier, String className,
