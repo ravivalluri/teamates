@@ -36,7 +36,7 @@ import teammates.ui.pagedata.PageData;
 public abstract class Action {
     protected static final Logger log = Logger.getLogger();
     
-    /** This is used to ensure unregistered users don't access certain pages in the system */
+    /** This is used to ensure unregistered users don't access certain pages in the system. */
     public String regkey;
     
     /** This will be the admin user if the application is running under the masquerade mode. */

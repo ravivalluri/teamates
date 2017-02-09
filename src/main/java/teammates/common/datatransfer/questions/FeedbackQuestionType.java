@@ -6,7 +6,7 @@ import teammates.common.util.Assumption;
 import teammates.common.util.Logger;
 
 public enum FeedbackQuestionType {
-    /** Feedback Question Type Definitions */
+    // Feedback Question Type Definitions
     TEXT(FeedbackTextQuestionDetails.class, FeedbackTextResponseDetails.class),
     MCQ(FeedbackMcqQuestionDetails.class, FeedbackMcqResponseDetails.class),
     MSQ(FeedbackMsqQuestionDetails.class, FeedbackMsqResponseDetails.class),

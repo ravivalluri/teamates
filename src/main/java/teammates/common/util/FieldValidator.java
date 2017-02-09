@@ -190,7 +190,7 @@ public class FieldValidator {
     ///////////////////////////////////////
 
     /**
-     * Must start with alphanumeric character, cannot contain vertical bar(|) or percent sign(%)
+     * Must start with alphanumeric character, cannot contain vertical bar(|) or percent sign(%).
      */
     public static final String REGEX_NAME = "^[\\p{IsL}\\p{IsN}][^|%]*+$";
     

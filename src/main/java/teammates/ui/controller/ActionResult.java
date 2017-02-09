@@ -27,7 +27,7 @@ public abstract class ActionResult {
      */
     public String destination;
     
-    /** True if the action did not complete successfully*/
+    /** True if the action did not complete successfully. */
     public boolean isError;
     
     /** The 'nominal' user for whom the action was executed */
