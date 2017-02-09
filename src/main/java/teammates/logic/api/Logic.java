@@ -603,8 +603,8 @@ public class Logic {
      * Omits archived courses if omitArchived == true<br>
      * Preconditions: <br>
      * * All parameters are non-null.
-     * @return A less detailed version of courses for this instructor without stats
-     *   Returns an empty list if none found.
+     * @return A less detailed version of courses for this instructor without stats.
+     *         Returns an empty list if none found.
      */
     public HashMap<String, CourseSummaryBundle> getCourseSummariesWithoutStatsForInstructor(String googleId,
                                                                                             boolean omitArchived) {
@@ -617,7 +617,7 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null.
      * @return A less detailed version of courses for this instructor.
-     *   Returns an empty list if none found.
+     *         Returns an empty list if none found.
      */
     public HashMap<String, CourseDetailsBundle> getCourseSummariesForInstructor(String googleId)
             throws EntityDoesNotExistException {
@@ -630,7 +630,7 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null.
      * @return A less detailed version of courses for the specified instructor attributes.
-     *   Returns an empty list if none found.
+     *         Returns an empty list if none found.
      */
     public HashMap<String, CourseDetailsBundle> getCourseSummariesForInstructors(List<InstructorAttributes> instructorList) {
         
@@ -1176,8 +1176,8 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null. <br>
      * 
-     * @return Details of Instructor's feedback sessions. <br>
-     * Returns an empty list if none found.
+     * @return Details of Instructor's feedback sessions.
+     *         Returns an empty list if none found.
      */
     public List<FeedbackSessionDetailsBundle> getFeedbackSessionDetailsForInstructor(
             String googleId) throws EntityDoesNotExistException {
@@ -1189,8 +1189,8 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null. <br>
      * 
-     * @return List(without details) of Instructor's feedback sessions. <br>
-     * Returns an empty list if none found.
+     * @return List(without details) of Instructor's feedback sessions.
+     *         Returns an empty list if none found.
      */
     public List<FeedbackSessionAttributes> getFeedbackSessionsListForInstructor(String googleId) {
         return getFeedbackSessionsListForInstructor(googleId, false);
@@ -1201,8 +1201,8 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null. <br>
      * 
-     * @return List(without details) of Instructor's feedback sessions. <br>
-     * Returns an empty list if none found.
+     * @return List(without details) of Instructor's feedback sessions.
+     *         Returns an empty list if none found.
      */
     public List<FeedbackSessionAttributes> getFeedbackSessionsListForInstructor(String googleId, boolean omitArchived) {
         Assumption.assertNotNull(ERROR_NULL_PARAMETER, googleId);
@@ -1219,8 +1219,8 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null. <br>
      * 
-     * @return Feedback session information, question + responses bundle for user <br>
-     * Returns an empty list if none found.
+     * @return Feedback session information, question + responses bundle for user.
+     *         Returns an empty list if none found.
      */
     public FeedbackSessionQuestionsBundle getFeedbackSessionQuestionsBundleForInstructor(String feedbackSessionName,
                                                                                          String courseId,
@@ -1250,8 +1250,8 @@ public class Logic {
      * Preconditions: <br>
      * * All parameters are non-null. <br>
      * 
-     * @return Feedback session information, question + responses bundle for user <br>
-     * Returns an empty list if none found.
+     * @return Feedback session information, question + responses bundle for user.
+     *         Returns an empty list if none found.
      */
     public FeedbackSessionQuestionsBundle getFeedbackSessionQuestionsBundleForStudent(String feedbackSessionName,
                                                                                       String courseId,

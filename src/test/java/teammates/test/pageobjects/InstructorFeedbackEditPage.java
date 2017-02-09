@@ -569,9 +569,8 @@ public class InstructorFeedbackEditPage extends AppPage {
     
     /**
      * 
-     * @return {@code True} if all elements expected to be enabled
-     * in the edit session frame are enabled after edit link is clicked.
-     * {@code False} if not.
+     * @return {@code True} if all elements expected to be enabled in the edit session frame are enabled
+     *         after edit link is clicked. {@code False} if not.
      */
     public boolean verifyEditSessionBoxIsEnabled() {
         boolean isEditSessionEnabled = fsSaveLink.isDisplayed() && timezoneDropDown.isEnabled()
@@ -785,7 +784,7 @@ public class InstructorFeedbackEditPage extends AppPage {
     /**
      * 
      * @return {@code True} if the button was clicked successfully and an element in the new question
-     * frame is now visible. {@code False} if not.
+     *         frame is now visible. {@code False} if not.
      */
     public void clickNewQuestionButton() {
         click(openNewQuestionButton);

@@ -57,7 +57,7 @@ public abstract class ActionResult {
 
     /**
      * @return Concatenated version of the status messages collected during the
-     * execution of the action. Messages are separated by {@code '<br>'}
+     *         execution of the action. Messages are separated by {@code '<br>'}
      */
     public String getStatusMessage() {
         List<String> statusMessageTexts = new ArrayList<String>();
@@ -82,7 +82,7 @@ public abstract class ActionResult {
     
     /**
      * @return Destination of the result, including parameters.
-     * e.g. {@code /page/instructorHome?user=abc}
+     *         e.g. {@code /page/instructorHome?user=abc}
      */
     public String getDestinationWithParams() {
         return appendParameters(destination, responseParams);
