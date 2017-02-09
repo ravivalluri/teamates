@@ -15,7 +15,9 @@ import teammates.common.exception.TeammatesException;
 
 import com.google.appengine.api.log.AppLogLine;
 
-/** A log entry to describe an action carried out by the app */
+/**
+ * A log entry to describe an action carried out by the app.
+ */
 public class ActivityLogEntry {
     
     // The following constants describe the positions of the attributes
@@ -63,7 +65,7 @@ public class ActivityLogEntry {
     private String[] keyStringsToHighlight;
     
     /**
-     * Constructor that creates a empty ActivityLog
+     * Constructor that creates a empty ActivityLog.
      */
     public ActivityLogEntry(String servlet, String params, String link) {
         time = System.currentTimeMillis();
@@ -102,8 +104,7 @@ public class ActivityLogEntry {
     }
 
     /**
-     * Constructor that creates an ActivityLog object from scratch
-     * Used in the various servlets in the application
+     * Constructor that creates an ActivityLog object from scratch.
      */
     public ActivityLogEntry(String servlet, String act, AccountAttributes acc, String params, String link,
                             UserType userType) {
@@ -285,7 +286,7 @@ public class ActivityLogEntry {
     
     /**
      * Assumption: the {@code requestUrl} is in the format "/something/actionName"
-     *   possibly followed by "?something" e.g., "/page/studentHome?user=abc"
+     *   possibly followed by "?something" e.g., "/page/studentHome?user=abc".
      * @return action name in the URL e.g., "studentHome" in the above example.
      */
     public static String getActionName(String requestUrl) {
@@ -293,7 +294,7 @@ public class ActivityLogEntry {
     }
 
     /**
-     * Generates a log message that will be logged in the server
+     * Generates a log message that will be logged in the server.
      */
     public String generateLogMessage() {
         //TEAMMATESLOG|||SERVLET_NAME|||ACTION|||TO_SHOW|||ROLE|||NAME|||GOOGLE_ID|||EMAIL|||MESSAGE(IN HTML)|||URL|||ID

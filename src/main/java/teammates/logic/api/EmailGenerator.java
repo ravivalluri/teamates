@@ -94,7 +94,7 @@ public class EmailGenerator {
     }
     
     /**
-     * Generates the feedback submission confirmation email for the given {@code session} for {@code student}
+     * Generates the feedback submission confirmation email for the given {@code session} for {@code student}.
      */
     public EmailWrapper generateFeedbackSubmissionConfirmationEmailForStudent(
             FeedbackSessionAttributes session, StudentAttributes student, Calendar timestamp) {

@@ -36,7 +36,7 @@ public enum FeedbackQuestionType {
     }
 
     /**
-     * Returns an instance of a corresponding Feedback*QuestionDetails class
+     * Returns an instance of a corresponding Feedback*QuestionDetails class.
      *
      * @return FeedbackQuestionDetails
      */
@@ -91,7 +91,7 @@ public enum FeedbackQuestionType {
     }
     
     /**
-     * Returns an instance of a corresponding Feedback*ResponseDetails class
+     * Returns an instance of a corresponding Feedback*ResponseDetails class.
      *
      * @return FeedbackResponseDetails
      */
@@ -159,7 +159,7 @@ public enum FeedbackQuestionType {
     }
 
     /**
-     * Getter for corresponding Feedback*QuestionDetails class
+     * Getter for corresponding Feedback*QuestionDetails class.
      *
      * @return Class<? extends FeedbackQuestionDetails>
      */
@@ -168,7 +168,7 @@ public enum FeedbackQuestionType {
     }
 
     /**
-     * Getter for corresponding Feedback*ResponseDetails class
+     * Getter for corresponding Feedback*ResponseDetails class.
      *
      * @return Class<? extends FeedbackResponseDetails>
      */

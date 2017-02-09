@@ -560,7 +560,7 @@ public class FeedbackQuestionAttributes extends EntityAttributes implements Comp
     }
     
     /** 
-     * This method converts the given Feedback*QuestionDetails object to JSON for storing
+     * This method converts the given Feedback*QuestionDetails object to JSON for storing.
      * 
      * @param questionDetails
      */
@@ -569,7 +569,7 @@ public class FeedbackQuestionAttributes extends EntityAttributes implements Comp
     }
 
     /** 
-     * This method retrieves the Feedback*QuestionDetails object for this question
+     * This method retrieves the Feedback*QuestionDetails object for this question.
      * 
      * @return The Feedback*QuestionDetails object representing the question's details
      */

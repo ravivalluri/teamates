@@ -69,7 +69,7 @@ public class Version implements Comparable<Version> {
     }
     
     /**
-     * Converts Version to String in format XX.XX.XXXX
+     * Converts Version to String in format XX.XX.XXXX.
      */
     @Override
     public String toString() {
@@ -77,7 +77,7 @@ public class Version implements Comparable<Version> {
     }
     
     /**
-     * Converts to String in format XX-XX-XXXX
+     * Converts to String in format XX-XX-XXXX.
      */
     public String toStringWithDashes() {
         return originalRepresentation.replace('.', '-');

@@ -281,7 +281,7 @@ public final class FeedbackSessionsLogic {
     /**
      * Gets {@code FeedbackQuestions} and previously filled
      * {@code FeedbackResponses} that an instructor can view/submit as a
-     * {@link FeedbackSessionQuestionsBundle}
+     * {@link FeedbackSessionQuestionsBundle}.
      */
     public FeedbackSessionQuestionsBundle getFeedbackSessionQuestionsForInstructor(
             String feedbackSessionName, String courseId, String userEmail)
@@ -392,7 +392,7 @@ public final class FeedbackSessionsLogic {
     /**
      * Gets {@code FeedbackQuestions} and previously filled
      * {@code FeedbackResponses} that a student can view/submit as a
-     * {@link FeedbackSessionQuestionsBundle}
+     * {@link FeedbackSessionQuestionsBundle}.
      */
     public FeedbackSessionQuestionsBundle getFeedbackSessionQuestionsForStudent(
             String feedbackSessionName, String courseId, String userEmail)
@@ -558,6 +558,9 @@ public final class FeedbackSessionsLogic {
         return hiddenInstructorEmails;
     }
 
+    /**
+     * Gets the response rate status for a session.
+     */
     public FeedbackSessionResponseStatus getFeedbackSessionResponseStatus(String feedbackSessionName, String courseId)
             throws EntityDoesNotExistException {
 
@@ -577,9 +580,8 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * Gets results of a feedback session to show to an instructor from an indicated question
-     * This will not retrieve the list of comments for this question
-     * @throws ExceedingRangeException if the results are beyond the range
+     * Gets results of a feedback session to show to an instructor from an indicated question.
+     * This will not retrieve the list of comments for this question.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorFromQuestion(
             String feedbackSessionName, String courseId, String userEmail, String questionId)
@@ -604,9 +606,8 @@ public final class FeedbackSessionsLogic {
     
     /**
      * Gets results of a feedback session to show to an instructor from an indicated question
-     * and in a section
-     * This will not retrieve the list of comments for this question
-     * @throws ExceedingRangeException if the results are beyond the range
+     * and in a section.
+     * This will not retrieve the list of comments for this question.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorFromQuestionInSection(
                                                 String feedbackSessionName, String courseId, String userEmail,
@@ -629,8 +630,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * Gets results of a feedback session to show to an instructor in an indicated range
-     * @throws ExceedingRangeException if the results are beyond the range
+     * Gets results of a feedback session to show to an instructor in an indicated range.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorWithinRangeFromView(
             String feedbackSessionName, String courseId, String userEmail, long range, String viewType)
@@ -641,8 +641,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * Gets results of a feedback session to show to an instructor in a section in an indicated range
-     * @throws ExceedingRangeException if the results are beyond the range
+     * Gets results of a feedback session to show to an instructor in a section in an indicated range.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorInSectionWithinRangeFromView(
             String feedbackSessionName, String courseId, String userEmail, String section, long range, String viewType)
@@ -667,8 +666,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * Gets results of a feedback session to show to an instructor in a section in an indicated range
-     * @throws ExceedingRangeException if the results are beyond the range
+     * Gets results of a feedback session to show to an instructor in a section in an indicated range.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorFromSectionWithinRange(
             String feedbackSessionName, String courseId, String userEmail, String section, long range)
@@ -691,8 +689,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * Gets results of a feedback session to show to an instructor in a section in an indicated range
-     * @throws ExceedingRangeException if the results are beyond the range
+     * Gets results of a feedback session to show to an instructor in a section in an indicated range.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorToSectionWithinRange(
             String feedbackSessionName, String courseId, String userEmail, String section, long range)
@@ -725,8 +722,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * Gets results of a feedback session to show to an instructor for a
-     * specific section
+     * Gets results of a feedback session to show to an instructor for a specific section.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorInSection(
             String feedbackSessionName, String courseId, String userEmail,
@@ -747,8 +743,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     *  Gets results of  a feedback session to show to an instructor from a
-     *  specific section
+     * Gets results of  a feedback session to show to an instructor from a specific section.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorFromSection(
             String feedbackSessionName, String courseId, String userEmail,
@@ -769,8 +764,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     *  Gets results of  a feedback session to show to an instructor to a
-     *  specific section
+     * Gets results of  a feedback session to show to an instructor to a specific section.
      */
     public FeedbackSessionResultsBundle getFeedbackSessionResultsForInstructorToSection(
             String feedbackSessionName, String courseId, String userEmail,
@@ -1525,8 +1519,7 @@ public final class FeedbackSessionsLogic {
     }
 
     /**
-     * This method deletes a specific feedback session, and all it's question
-     * and responses
+     * Deletes a specific feedback session, and all its question and responses.
      */
     public void deleteFeedbackSessionCascade(String feedbackSessionName, String courseId) {
 

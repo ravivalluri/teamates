@@ -253,14 +253,14 @@ public abstract class AppPage {
     }
 
     /**
-     * Waits for an alert modal to appear and dismisses it
+     * Waits for an alert modal to appear and dismisses it.
      */
     public void waitForAndDismissAlertModal() {
         waitForConfirmationModalAndClickOk();
     }
 
     /**
-     * Waits for a confirmation modal to appear and click the confirm button
+     * Waits for a confirmation modal to appear and click the confirm button.
      */
     public void waitForConfirmationModalAndClickOk() {
         waitForModalPresence();
@@ -271,7 +271,7 @@ public abstract class AppPage {
     }
 
     /**
-     * Waits for a confirmation modal to appear and click the cancel button
+     * Waits for a confirmation modal to appear and click the cancel button.
      */
     public void waitForConfirmationModalAndClickCancel() {
         waitForModalPresence();
@@ -300,7 +300,7 @@ public abstract class AppPage {
     }
 
     /**
-     * Waits for text contained in the element to appear in the page, or timeout
+     * Waits for text contained in the element to appear in the page, or timeout.
      */
     public void waitForTextContainedInElementPresence(By by, String text) {
         WebDriverWait wait = new WebDriverWait(browser.driver, TestProperties.TEST_TIMEOUT);
@@ -308,7 +308,7 @@ public abstract class AppPage {
     }
     
     /**
-     * Waits for text contained in the element to disappear from the page, or timeout
+     * Waits for text contained in the element to disappear from the page, or timeout.
      */
     public void waitForTextContainedInElementAbsence(By by, String text) {
         WebDriverWait wait = new WebDriverWait(browser.driver, TestProperties.TEST_TIMEOUT);
@@ -874,7 +874,7 @@ public abstract class AppPage {
     }
     
     /**
-     * Verifies that the title of the loaded page is the same as {@code expectedTitle}
+     * Verifies that the title of the loaded page is the same as {@code expectedTitle}.
      * @param expectedTitle
      */
     public void verifyTitle(String expectedTitle) {

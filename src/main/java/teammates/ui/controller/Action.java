@@ -324,11 +324,8 @@ public abstract class Action {
         return userNeedsRegistrationForPage && userIsNotRegistered;
     }
     
-    /** ------------------------------------------------
-     * These methods are used for CRUD operations on
-     * urls used for redirecting users to login page
-     * @return
-     */
+    // These methods are used for CRUD operations on urls used for redirecting users to login page
+    
     public boolean isValidUser() {
         return authenticationRedirectUrl.isEmpty();
     }

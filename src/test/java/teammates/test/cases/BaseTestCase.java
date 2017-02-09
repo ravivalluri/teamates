@@ -14,9 +14,10 @@ import teammates.common.util.JsonUtils;
 import teammates.test.driver.FileHelper;
 import teammates.test.driver.TestProperties;
 
-/** Base class for all test cases */
+/**
+ * Base class for all test cases.
+ */
 public class BaseTestCase {
-
 
     /**
      * Test Segment divider. Used to divide a test case into logical sections.

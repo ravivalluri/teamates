@@ -33,7 +33,7 @@ public class CourseDetailsBundle {
     }
     
     /**
-     * Gets all FeedbackSessionAttributes in this CourseDetailsBundle
+     * Gets all FeedbackSessionAttributes in this CourseDetailsBundle.
      * @return
      */
     public List<FeedbackSessionAttributes> getFeedbackSessionsList() {
@@ -55,7 +55,7 @@ public class CourseDetailsBundle {
     
     
     /**
-     * Sorts courses based on course ID
+     * Sorts courses based on course ID.
      */
     public static void sortDetailedCourses(List<CourseDetailsBundle> courses) {
         Collections.sort(courses, new Comparator<CourseDetailsBundle>() {
@@ -67,7 +67,7 @@ public class CourseDetailsBundle {
     }
     
     /**
-     * Sorts courses based on course creation date in the order of latest to oldest order
+     * Sorts courses based on course creation date in the order of latest to oldest order.
      */
     public static void sortDetailedCoursesByCreationDate(List<CourseDetailsBundle> courses) {
         Collections.sort(courses, new Comparator<CourseDetailsBundle>() {

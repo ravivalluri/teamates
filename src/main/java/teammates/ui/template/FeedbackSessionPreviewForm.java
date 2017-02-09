@@ -4,8 +4,7 @@ import java.util.List;
 
 
 /**
- * Data model for the form for previewing a feedback session as a student or instructor
- *
+ * Data model for the form for previewing a feedback session as a student or instructor.
  */
 public class FeedbackSessionPreviewForm {
 
