@@ -298,6 +298,7 @@
             </tbody>
         </table>
     </div>
+    <button id="test-button"></button>
     <div id="visible">Visible</div>
     <script type="text/javascript" src="<%= FrontEndLibrary.QUNIT %>"></script>
     <script type="text/javascript" src="<%= FrontEndLibrary.BLANKET %>"></script>
