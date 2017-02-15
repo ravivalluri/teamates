@@ -342,7 +342,7 @@
     <script type="text/javascript" src="/dev/InstructorCourseDetailsJsTest.js"></script>
     <script type="text/javascript" src="/dev/InstructorEnrolmentJsTest.js"></script>
     <script type="text/javascript" src="/dev/InstructorFeedbacksJsTest.js"></script>
-    <script type="text/javascript" src="/dev/InstructorStudentListJsTest.js"></script>
+    <!-- <script type="text/javascript" src="/dev/InstructorStudentListJsTest.js"></script> -->
     <script type="text/javascript" src="/dev/InstructorJsTest.js"></script>
     <script type="text/javascript" src="/dev/StudentJsTest.js"></script>
     <script type="text/javascript" src="/dev/SubmissionCountJsTest.js"></script>
