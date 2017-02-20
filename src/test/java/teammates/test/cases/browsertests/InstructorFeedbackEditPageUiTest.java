@@ -881,7 +881,7 @@ public class InstructorFeedbackEditPageUiTest extends BaseUiTestCase {
         feedbackEditPage.fillQuestionDescription("more details", 1);
         feedbackEditPage.clickSaveExistingQuestionButton(1);
 
-        AppUrl expectedRedirectUrl = createUrl("/entityNotFoundPage.jsp");
+        AppUrl expectedRedirectUrl = createUrl(Const.ViewURIs.ENTITY_NOT_FOUND_PAGE);
 
         assertEquals(expectedRedirectUrl.toAbsoluteString(), browser.driver.getCurrentUrl());
 

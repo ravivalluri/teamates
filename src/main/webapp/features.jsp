@@ -1,9 +1,13 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="teammates.common.util.Const" %>
+<c:set var="contactPage" value="<%= Const.ViewURIs.CONTACT %>" />
+<c:set var="instructorHelpPage" value="<%= Const.ViewURIs.INSTRUCTOR_HELP %>" />
 <t:staticPage currentPage="features">
     <div class="container">
         <div class="lead">
             Here is an overview of some notable TEAMMATES features.
-            The <a href="instructorHelp.jsp">help page</a> contains more details about how to use these features.
+            The <a href="${instructorHelpPage}">help page</a> contains more details about how to use these features.
         </div>
         <section class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -183,7 +187,7 @@
         
         <div class="row">
             <p class="col-xs-12 col-sm-8 col-sm-offset-2">
-            For more details about these features, visit the <a href="instructorHelp.jsp" target="_blank" rel="noopener noreferrer">Instructor Help</a> page or <a href="contact.jsp">email us</a>.
+            For more details about these features, visit the <a href="${instructorHelpPage}" target="_blank" rel="noopener noreferrer">Instructor Help</a> page or <a href="${contactPage}">email us</a>.
             </p>
         </div>
     </div>

@@ -836,6 +836,7 @@ public final class Const {
         
         /* _PAGE/Page in the Action URI name means 'show page' */
     
+        public static final String LOGIN = "/login";
         public static final String LOGOUT = "/logout";
     
         public static final String INSTRUCTOR_HOME_PAGE = "/page/instructorHomePage";
@@ -1113,6 +1114,17 @@ public final class Const {
         public static final String ACTION_NOT_FOUND_PAGE = "/pageNotFound.jsp";
         public static final String FEEDBACK_SESSION_NOT_VISIBLE = "/feedbackSessionNotVisible.jsp";
         
+        public static final String INDEX = "/index.jsp";
+        public static final String ABOUT = "/about.jsp";
+        public static final String FEATURES = "/features.jsp";
+        public static final String CONTACT = "/contact.jsp";
+        public static final String TERMS = "/terms.jsp";
+        public static final String USERMAP = "/usermap.jsp";
+        public static final String ACCOUNT_REQUEST = "/request.jsp";
+        
+        public static final String STUDENT_HELP = "/studentHelp.jsp";
+        public static final String INSTRUCTOR_HELP = "/instructorHelp.jsp";
+        
         public static final String JS_UNIT_TEST = "/dev/allJsUnitTests.jsp?coverage";
         public static final String MASHUP = "/dev/mashup.jsp";
         public static final String TABLE_SORT = "/dev/tableSort.jsp";
@@ -1156,7 +1168,7 @@ public final class Const {
                         + "</li>"
                         + "<li>"
                             + "You changed the primary email from a non-Gmail address to a Gmail address recently. "
-                            + "In that case, <a href=\"/contact.jsp\">email us</a> "
+                            + "In that case, <a href=\"" + ViewURIs.CONTACT + "\">email us</a> "
                             + "so that we can reconfigure your account to use the new Gmail address."
                         + "</li>"
                         + "<li>"
@@ -1378,8 +1390,9 @@ public final class Const {
         public static final String COMMENT_CLEARED_UNSUCCESSFULLY = "Notification for some pending comments fails to send";
         
         public static final String HINT_FOR_NEW_INSTRUCTOR = "New to TEAMMATES? You may wish to have a look at our "
-                + "<a href=\"/instructorHelp.jsp#gs\" target=\"_blank\">Getting Started Guide</a>.<br>A video tour"
-                + " is also available in our <a href=\"/index.jsp\" target=\"_blank\">home page</a>.";
+                + "<a href=\"" + ViewURIs.INSTRUCTOR_HELP + "#gs\" target=\"_blank\" rel=\"noopener noreferrer\">"
+                + "Getting Started Guide</a>.<br>A video tour is also available in our "
+                + "<a href=\"" + ViewURIs.INDEX + "\" target=\"_blank\" rel=\"noopener noreferrer\">home page</a>.";
         
         public static final String HINT_FOR_NO_SESSIONS_STUDENT =
                 "Currently, there are no open feedback sessions in the course %s. "

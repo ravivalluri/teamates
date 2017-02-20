@@ -1,4 +1,8 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="teammates.common.util.Const" %>
+<c:set var="contactPage" value="<%= Const.ViewURIs.CONTACT %>" />
+<c:set var="studentHomePage" value="<%= Const.ActionURIs.STUDENT_HOME_PAGE %>" />
 <% response.setStatus(500);%>
 <t:errorPage>
     <div class="row">
@@ -19,11 +23,11 @@
                     <br><br>
                 </li>
             </ul>
-            If the problem persists, please inform <a class="link" href="contact.jsp" target="_blank" rel="noopener noreferrer">TEAMMATES support team</a>.
+            If the problem persists, please inform <a class="link" href="${contactPage}" target="_blank" rel="noopener noreferrer">TEAMMATES support team</a>.
             <br><br>
             <b>Note: </b>If the problematic link was received via email, please also forward us the original email containing the link you clicked, to help us with the troubleshooting.
             <br><br>
-            If you are a registered user you can go back to the <a href="/page/studentHomePage">home page</a>
+            If you are a registered user you can go back to the <a href="${studentHomePage}">home page</a>
             <br><br>
         </div>
     </div>

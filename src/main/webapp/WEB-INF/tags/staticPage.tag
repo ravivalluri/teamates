@@ -1,4 +1,5 @@
 <%@ tag description="Generic TEAMMATES Static Page" %>
+<%@ tag import="teammates.common.util.Const" %>
 <%@ tag import="teammates.common.util.FrontEndLibrary" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ attribute name="jsIncludes" %>
@@ -35,11 +36,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="text-right ${currentPage == 'index' ? 'active' : ''}"><a href="index.jsp">Home</a></li>
-                        <li class="text-right ${currentPage == 'features' ? 'active' : ''}"><a href="features.jsp">Features</a></li>
-                        <li class="text-right ${currentPage == 'about' ? 'active' : ''}"><a href="about.jsp">About Us</a></li>
-                        <li class="text-right ${currentPage == 'contact' ? 'active' : ''}"><a href="contact.jsp">Contact</a></li>
-                        <li class="text-right ${currentPage == 'terms' ? 'active' : ''}"><a href="terms.jsp">Terms of Use</a></li>
+                        <li class="text-right ${currentPage == 'index' ? 'active' : ''}"><a href="<%= Const.ViewURIs.INDEX %>">Home</a></li>
+                        <li class="text-right ${currentPage == 'features' ? 'active' : ''}"><a href="<%= Const.ViewURIs.FEATURES %>">Features</a></li>
+                        <li class="text-right ${currentPage == 'about' ? 'active' : ''}"><a href="<%= Const.ViewURIs.ABOUT %>">About Us</a></li>
+                        <li class="text-right ${currentPage == 'contact' ? 'active' : ''}"><a href="<%= Const.ViewURIs.CONTACT %>">Contact</a></li>
+                        <li class="text-right ${currentPage == 'terms' ? 'active' : ''}"><a href="<%= Const.ViewURIs.TERMS %>">Terms of Use</a></li>
                     </ul>
                     <form class="navbar-form navbar-right" action="/login" name="login">
                         <input type="submit" name="student" class="btn btn-login " id="btnStudentLogin" value="Student Login" label="studentLogin">

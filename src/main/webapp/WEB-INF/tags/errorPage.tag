@@ -1,6 +1,7 @@
 <%@ tag description="Generic TEAMMATES Error Page" %>
 <%@ tag import="teammates.common.util.FrontEndLibrary" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
+<%@ tag import="teammates.common.util.Const" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/index.jsp">TEAMMATES</a>
+                <a class="navbar-brand" href="<%= Const.ViewURIs.INDEX %>">TEAMMATES</a>
             </div>
         </div>
     </div>

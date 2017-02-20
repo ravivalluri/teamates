@@ -1,4 +1,7 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="teammates.common.util.Const" %>
+<c:set var="contactPage" value="<%= Const.ViewURIs.CONTACT %>" />
 <t:staticPage currentPage="about">
     <div class="container">
         <section class="row">
@@ -1138,6 +1141,6 @@
             </table>
         </section>
         <p>
-            Would you like to join the TEAMMATES team as a contributor? <a href="contact.jsp">Contact Us</a>.
+            Would you like to join the TEAMMATES team as a contributor? <a href="${contactPage}">Contact Us</a>.
         </p>
 </t:staticPage>

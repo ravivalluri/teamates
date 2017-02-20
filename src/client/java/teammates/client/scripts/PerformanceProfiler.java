@@ -377,7 +377,7 @@ public class PerformanceProfiler extends Thread {
     
     @PerformanceTest(name = "Instructor help page ")
     public String instructorHelp() {
-        browser.goToUrl(TestProperties.TEAMMATES_URL + "/instructorHelp.jsp");
+        browser.goToUrl(TestProperties.TEAMMATES_URL + Const.ViewURIs.INSTRUCTOR_HELP);
         return "";
     }
     

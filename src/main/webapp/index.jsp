@@ -1,9 +1,14 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="teammates.common.util.Const" %>
 <c:set var="jsIncludes">
     <script type="text/javascript" src="/js/checkBrowserVersion.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
 </c:set>
+<c:set var="aboutPage" value="<%= Const.ViewURIs.ABOUT %>" />
+<c:set var="featuresPage" value="<%= Const.ViewURIs.FEATURES %>" />
+<c:set var="usermapPage" value="<%= Const.ViewURIs.USERMAP %>" />
+<c:set var="requestPage" value="<%= Const.ViewURIs.ACCOUNT_REQUEST %>" />
 <t:staticPage jsIncludes="${jsIncludes}" currentPage="index">
     <div id="browserMessage" style="display: none;"></div>
     <br>
@@ -24,7 +29,7 @@
                 </a>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-4 col-lg-3">
-                <a class="btn btn-success btn-block" href="request.jsp">Request a Free Instructor Account</a>
+                <a class="btn btn-success btn-block" href="${requestPage}">Request a Free Instructor Account</a>
             </div>
         </div>
     </main>
@@ -51,7 +56,7 @@
         <div class="col-xs-12 col-sm-8">
             <h2 class="media-heading">Award Winning, Mature, Field-tested:</h2>
             <p>
-                TEAMMATES has been in operation since 2010. It has benefited from the work of over <a href="about.jsp">190 developers</a>.<br>
+                TEAMMATES has been in operation since 2010. It has benefited from the work of over <a href="${aboutPage}">190 developers</a>.<br>
                 TEAMMATES won the Grand Prize at the OSS Awards World Challenge 2014 and was selected as a mentoring organization for Google Summer of Code Program (2014, 2015, 2016) and Facebook Open Academy Program (2016).
             </p>
         </div>
@@ -66,7 +71,7 @@
             <p>
                 TEAMMATES was designed by a team of teachers and students, for teachers and students.
                 It aims to provide a powerful peer feedback and peer evaluations mechanism with a very high degree of flexibility.
-                <a href="features.jsp">More about our features...</a>
+                <a href="${featuresPage}">More about our features...</a>
             </p>
         </div>
     </div>
@@ -94,7 +99,7 @@
                 TEAMMATES community is growing fast, spanning over 1000 universities from many countries across the globe:
                 Singapore, Canada, USA, UK, Turkey, Australia, Malaysia, Belgium, Taiwan, Macau, Sri Lanka, India, China, Vietnam, and more ...
             </p>
-            <p><a href="usermap.jsp">See who is using TEAMMATES.</a></p>
+            <p><a href="${usermapPage}">See who is using TEAMMATES.</a></p>
         </div>
     </div>
 

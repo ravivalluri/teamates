@@ -1,8 +1,9 @@
 <%@ tag description="adminEmailLog.jsp - filter panel in Admin Email Log Page" %>
+<%@ tag import="teammates.common.util.Const" %>
 <%@ attribute name="filterQuery" required="true" %>
 
 <div class="well well-plain">
-    <form class="form-horizontal" method="post" action="/admin/adminEmailLogPage"
+    <form class="form-horizontal" method="post" action="<%= Const.ActionURIs.ADMIN_EMAIL_LOG_PAGE %>"
           id="activityLogFilter" role="form">
 
         <div class="panel-heading" id="filterForm">
