@@ -1,30 +1,18 @@
-**Bug Report**
+**Issue Title:** Bug: [brief description of bug]
 
-**Issue Title:** Bug Report: [Brief description of bug]
+Copy-and-paste the following template to the issue tracker and fill it in with relevant details:
+```markdown
+**The environment in which the bug is encountered (e.g. live server at `V5.93`, `master` branch at commit 1234567)**
 
-**Environment (dev/staging/live, version)**
 
-> Tell us what environment you encountered the bug on,
->
-> e.g. live server at `V5.93`
->
-> e.g. `master` branch at commit 1234567
 
-**Steps to Reproduce**
+**Steps to reproduce the bug**
 
-> Help us to reproduce the bug on our end so we can fix it, e.g.
-> 
-> 1. Login as an student on the mobile website.
-> 1. Click 'Comments' in the menu.
 
-**Expected Behaviour**
 
-> Tell us what you expected to happen after the steps detailed above,
->
-> e.g. Clicking on 'Comments' was supposed to bring me to the 'Comments' page.
+**Expected behaviour**
 
-**Actual Behaviour**
 
-> Tell us what actually happened,
->
-> e.g. Nothing happened
+
+**Actual behaviour**
+```
